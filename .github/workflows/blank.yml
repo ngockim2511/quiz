@@ -1,0 +1,52 @@
+
+# Quiz 
+
+print("Hello! Welcome to The Creators Exhimuse")
+ans =input("Are you ready to play the Quiz:(y/n) ")
+score=0 # We have made a score variable to save data. 
+totalques=10 # This can be changed based on number of ques default is taken 10
+
+if ans.lower()=="yes" or ans.lower()=="y": # lower() functions changes all letters in small letters in string. 
+    ans=input("1. Chiến dịch điện biên phủ chiến thắng vào năm nào(gõ số) ?")
+    if ans.lower()=="1954":
+        score+=1
+        print("Correct")
+    else:
+        print("Incorrect")'
+        
+    ans=input("2. Hà Thành thăng long ở đâu ?")
+    if ans=="Hanoi" or ans=="Ha Noi" or ans=="Hà Nội" or ans.lower()=="hanoi" or ans.lower()=="ha noi": # there could be different ways of writing the right answer we need to check all conditions. 
+        score+=1
+        print("Correct")
+    else:
+        print("Incorrect")
+
+    ans=input("3. Hiệp ước Patonotre được kí năm bao nhiêu ?")
+    if ans.lower()=="1884":
+        score+=1
+        print("Correct")
+        
+  
+    ans=input("5. Chủ tịch Hồ Chí Minh sinh năm bao nhiêu?")
+    if ans.lower()=="1890":
+        score+=1
+        print("Correct")
+
+print("Thank you for playing, your total right answers were: ", score)
+
+mark=(score/totalques)*100 # We will calculate the percentage of score. 
+
+print("Marks: ", mark,"% ")
+
+if mark>80:
+    print("Very Good. You were excellent.")
+elif mark>60 and mark<=80:
+    print("You did well. Try to make it better.")
+else:
+    print("Try again. ")
+
+print("Good Luck. ")
+
+
+
+
